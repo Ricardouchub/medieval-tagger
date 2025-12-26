@@ -182,3 +182,4 @@ cython_debug/
 AGENTS.md
 /input_images
 /medieval_dataset
+uv.lock
