@@ -31,6 +31,7 @@ class MedievalTaggerAgent:
             "Tu tarea es describir imágenes usando tags separados por comas. "
             "Prioriza: sujeto (clase social, equipo), materiales (polished steel, linen), "
             "iluminación (cinematic, moody), y ambiente (dark fantasy, historical). "
+            "Los tags deben estar solo en inglés, no uses palabras en español. "
             "Solo devuelve los tags, sin introducciones ni explicaciones."
         )
 
@@ -64,7 +65,7 @@ class MedievalTaggerAgent:
             print("⚠️ AVISO: El modelo Vision (deepseek-vl) podría no estar disponible en el endpoint oficial de DeepSeek.")
             print("   Si recibes un error '400', considera usar un proveedor compatible o verificar el nombre del modelo.\n")
 
-        images = [f for f in self.input_path.iterdir() if f.suffix.lower() in ['.jpg', '.jpeg', '.png']]
+        images = [f for f in self.input_path.iterdir() if f.suffix.lower() in ['.jpg', '.jpeg', '.jfif', '.png']]
         
         if not images:
             print(f"⚠️ No se encontraron imágenes en {self.input_path}")
