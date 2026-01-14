@@ -1,6 +1,6 @@
 # Medieval Vision Curation Agent
 
-Este proyecto es un agente de IA especializado en la **automatización de etiquetado semántico** para imágenes de temática medieval. Está diseñado específicamente para la creación de datasets de alta calidad destinados al entrenamiento de modelos de difusión (Stable Diffusion XL, Flux, LoRA).
+Agente de IA especializado en la **automatización de etiquetado semántico** para imágenes de temática medieval. Está diseñado específicamente para la creación de datasets de alta calidad destinados al entrenamiento de modelos de difusión (Stable Diffusion XL, Flux, LoRA).
 
 ## Objetivo
 
@@ -18,8 +18,8 @@ Transformar una colección de imágenes heterogéneas en un dataset estructurado
 
 ##  Instalación y Configuración
 
-### 1. Requisitos previos
-Tener instalado [uv](https://github.com/astral-sh/uv).
+### 1. Requisitos 
+[uv](https://github.com/astral-sh/uv)
 
 ### 2. Inicialización
 ```powershell
@@ -69,5 +69,5 @@ Al final de cada ejecución, el agente muestra un resumen con:
 *   Gasto total de tokens.
 *   Promedio de tokens por imagen.
 
----
-*Desarrollado para la creación de arte medieval con IA de alta precisión.*
+## Autor
+**Ricardo Urdaneta**
